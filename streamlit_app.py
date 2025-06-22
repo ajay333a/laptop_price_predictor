@@ -266,10 +266,20 @@ def show_home_page(df_clean):
     col1, col2 = st.columns(2)
     
     with col1:
-        st.info("**R² Score: 0.89**\n\nThis means our model explains 89% of the price variance, making it highly accurate for price predictions.")
+        st.info("**R² Score: 0.88** \n\n This means our model explains 88% of the price variance, making it highly accurate for price predictions.")
     
     with col2:
-        st.success("**Mean Squared Error: 0.037**\n\nLow error rate ensures reliable and consistent predictions across different laptop configurations.")
+        st.success("**Mean Squared Error: 0.037**\n\nLow error rate ensures reliable and consistent predictions across different laptop configurations.\n Note that error is for 'Log of Price' not the price in Rupees")
+
+    st.markdown("---")
+    
+    # Code and Analysis section
+    st.subheader("📖 Code and Analysis")
+    st.markdown("""
+    For a detailed walkthrough of the data analysis, feature engineering, and model building process, please refer to the complete project notebook on my data science blog.
+    
+    **➡️ [Read the full analysis here](https://ajay333a.quarto.pub/python_blog/posts/laptop_pc_pred/laptop_price_prediction.html)**
+    """)
 
 def show_prediction_page(df_clean):
     """Display the laptop price prediction interface"""
@@ -526,7 +536,7 @@ def show_about_page():
     ### 📝 Citations (Projects)
     - **Availability of Wood for Handicrafts in Karnataka** - Strengthening livelihoods and job creation.
     - **An Assessment of Wood Availability in Karnataka**
-    
+
     *Information sourced from [ajay333a.quarto.pub](https://ajay333a.quarto.pub/ajay333a/about.html).*
     """)
 

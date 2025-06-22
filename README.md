@@ -192,6 +192,20 @@ The Random Forest model achieves excellent performance:
 
 ---
 
+## 📖 Code and Analysis Notebook
+
+For a detailed walkthrough of the data analysis, feature engineering, model building, and evaluation process, please refer to the complete project notebook available on my data science blog.
+
+**➡️ [Read the full analysis here](https://ajay333a.quarto.pub/python_blog/posts/laptop_pc_pred/laptop_price_prediction.html)**
+
+The notebook covers:
+- In-depth Exploratory Data Analysis (EDA)
+- Feature engineering techniques
+- Step-by-step model implementation (Random Forest and Linear Regression)
+- Hyperparameter tuning and performance metrics
+
+---
+
 ## 🔄 How It Works
 
 1. **Data Preprocessing**: Clean and engineer features from raw data

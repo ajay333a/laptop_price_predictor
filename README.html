@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="laptop-price-predictor" class="level1">
+<h1>💻 Laptop Price Predictor</h1>
+<p>A modern machine learning application that predicts laptop prices based on various specifications using Random Forest Regressor algorithm, built with Streamlit and featuring a sleek dark theme interface.</p>
+<hr>
+<section id="features" class="level2">
+<h2 class="anchored" data-anchor-id="features">🎯 Features</h2>
+<ul>
+<li><strong>Real-time Price Prediction</strong>: Get instant laptop price predictions with detailed analysis</li>
+<li><strong>Modern Dark UI</strong>: Sleek, modern interface with custom color scheme</li>
+<li><strong>Multi-page Navigation</strong>: Clean sidebar navigation with clickable buttons</li>
+<li><strong>Comprehensive Data Overview</strong>: Detailed insights about the training dataset</li>
+<li><strong>Similar Laptops</strong>: Find laptops within ₹5,000 of predicted price</li>
+<li><strong>Responsive Design</strong>: Optimized for different screen sizes</li>
+</ul>
+<hr>
+</section>
+<section id="model-details" class="level2">
+<h2 class="anchored" data-anchor-id="model-details">🧠 Model Details</h2>
+<ul>
+<li><strong>Algorithm</strong>: Random Forest Regressor</li>
+<li><strong>Performance</strong>: R² Score of ~0.88 (88% accuracy)</li>
+<li><strong>Features</strong>: 18+ engineered features including CPU, GPU, RAM, Storage, Display, etc.</li>
+<li><strong>Dataset</strong>: 1,200+ laptop records with comprehensive specifications</li>
+<li><strong>Training</strong>: Optimized hyperparameters with cross-validation</li>
+</ul>
+<hr>
+</section>
+<section id="dataset-information" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-information">📊 Dataset Information</h2>
+<section id="source" class="level3">
+<h3 class="anchored" data-anchor-id="source">Source</h3>
+<p>The model is trained on the <strong>“Laptop Price Prediction Dataset”</strong> from Kaggle, which contains comprehensive laptop specifications and prices from various manufacturers.</p>
+<p><strong>📎 Kaggle Dataset Link</strong>: <a href="https://www.kaggle.com/datasets/arnabchaki/laptop-price-prediction">Laptop Price Prediction Dataset</a></p>
+</section>
+<section id="dataset-overview" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-overview">Dataset Overview</h3>
+<ul>
+<li><strong>Total Records</strong>: 1,300+ laptop entries</li>
+<li><strong>Price Range</strong>: ₹20,000 - ₹2,00,000 (Indian Rupees)</li>
+<li><strong>Time Period</strong>: Data collected from 2020-2023</li>
+<li><strong>Geographic Focus</strong>: Indian market laptops</li>
+</ul>
+</section>
+<section id="features-included" class="level3">
+<h3 class="anchored" data-anchor-id="features-included">Features Included</h3>
+<ul>
+<li><strong>Hardware Specifications</strong>: CPU, RAM, Storage, GPU</li>
+<li><strong>Display Features</strong>: Screen size, resolution, display type</li>
+<li><strong>Physical Attributes</strong>: Weight, laptop type</li>
+<li><strong>Software</strong>: Operating system</li>
+<li><strong>Brand Information</strong>: Manufacturer details</li>
+</ul>
+</section>
+<section id="data-quality" class="level3">
+<h3 class="anchored" data-anchor-id="data-quality">Data Quality</h3>
+<ul>
+<li><strong>Completeness</strong>: 95%+ data completeness</li>
+<li><strong>Accuracy</strong>: Verified against market prices</li>
+<li><strong>Diversity</strong>: Multiple brands and categories</li>
+<li><strong>Currency</strong>: All prices in Indian Rupees (₹)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="installation-setup" class="level2">
+<h2 class="anchored" data-anchor-id="installation-setup">🛠️ Installation &amp; Setup</h2>
+<section id="prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Python 3.8 or higher</li>
+<li>pip package manager</li>
+</ul>
+</section>
+<section id="step-1-clone-or-download-the-project" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-clone-or-download-the-project">Step 1: Clone or Download the Project</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If using git</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="op">&lt;</span>repository-url<span class="op">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> laptop_prc_pred</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Or download and extract the project files</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-2-install-dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-install-dependencies">Step 2: Install Dependencies</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="step-3-build-the-model" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-build-the-model">Step 3: Build the Model</h3>
+<p>Before running the app, you need to build and save the machine learning model:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> model_builder.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will: - Load and clean the laptop dataset - Extract and engineer features - Train the Random Forest model - Save the model and encoders as pickle files</p>
+</section>
+<section id="step-4-run-the-streamlit-app" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-run-the-streamlit-app">Step 4: Run the Streamlit App</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">streamlit</span> run streamlit_app.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The app will open in your default web browser at <code>http://localhost:8501</code></p>
+<hr>
+</section>
+</section>
+<section id="app-interface" class="level2">
+<h2 class="anchored" data-anchor-id="app-interface">🎨 App Interface</h2>
+<section id="pages-overview" class="level3">
+<h3 class="anchored" data-anchor-id="pages-overview">Pages Overview</h3>
+<ol type="1">
+<li><strong>🏠 Home</strong>: Project overview and dataset statistics</li>
+<li><strong>💰 Price Prediction</strong>: Main prediction interface with form inputs</li>
+<li><strong>📊 Data Info</strong>: Information about the training dataset and source</li>
+<li><strong>ℹ️ About</strong>: Author information and project details</li>
+</ol>
+</section>
+<section id="modern-design-features" class="level3">
+<h3 class="anchored" data-anchor-id="modern-design-features">Modern Design Features</h3>
+<ul>
+<li><strong>Dark Theme</strong>: Custom color scheme with primary blue (#1f77b4), dark backgrounds, and high contrast text</li>
+<li><strong>Clean Navigation</strong>: Sidebar with clickable buttons instead of dropdown menus</li>
+<li><strong>Responsive Layout</strong>: Four-column specification inputs for better organization</li>
+<li><strong>Visual Hierarchy</strong>: Clear spacing and typography for better readability</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="features-used-for-prediction" class="level2">
+<h2 class="anchored" data-anchor-id="features-used-for-prediction">📊 Features Used for Prediction</h2>
+<section id="hardware-specifications" class="level3">
+<h3 class="anchored" data-anchor-id="hardware-specifications">Hardware Specifications</h3>
+<ul>
+<li><strong>CPU</strong>: Brand, Model, and Clock Speed</li>
+<li><strong>RAM</strong>: Capacity in GB</li>
+<li><strong>Storage</strong>: Type (SSD/HDD) and Capacity</li>
+<li><strong>GPU</strong>: Brand and Model</li>
+</ul>
+</section>
+<section id="display-features" class="level3">
+<h3 class="anchored" data-anchor-id="display-features">Display Features</h3>
+<ul>
+<li><strong>Screen Size</strong>: Diagonal measurement in inches</li>
+<li><strong>Resolution</strong>: Display resolution (e.g., 1920x1080)</li>
+<li><strong>Display Type</strong>: IPS, TN, etc.</li>
+<li><strong>Touchscreen</strong>: Yes/No</li>
+</ul>
+</section>
+<section id="physical-characteristics" class="level3">
+<h3 class="anchored" data-anchor-id="physical-characteristics">Physical Characteristics</h3>
+<ul>
+<li><strong>Weight</strong>: Laptop weight in kg</li>
+<li><strong>Laptop Type</strong>: Ultrabook, Gaming, Notebook, etc.</li>
+</ul>
+</section>
+<section id="software-brand" class="level3">
+<h3 class="anchored" data-anchor-id="software-brand">Software &amp; Brand</h3>
+<ul>
+<li><strong>Operating System</strong>: Windows, macOS, Linux, etc.</li>
+<li><strong>Manufacturer Brand</strong>: Dell, HP, Apple, etc.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="how-to-use" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use">🚀 How to Use</h2>
+<ol type="1">
+<li><strong>Launch the App</strong>: Run <code>streamlit run streamlit_app.py</code></li>
+<li><strong>Navigate</strong>: Use the sidebar buttons to switch between pages</li>
+<li><strong>Make Predictions</strong>:
+<ul>
+<li>Go to “💰 Price Prediction” page</li>
+<li>Fill in the laptop specifications using the four-column layout</li>
+<li>Click “🚀 Predict Price” button</li>
+<li>View the predicted price and similar laptops</li>
+</ul></li>
+<li><strong>Explore Data</strong>: Visit “📊 Data Info” for dataset information</li>
+</ol>
+<hr>
+</section>
+<section id="project-structure" class="level2">
+<h2 class="anchored" data-anchor-id="project-structure">📁 Project Structure</h2>
+<pre><code>laptop_prc_pred/
+├── laptop.csv                 # Raw dataset
+├── model_builder.py           # Model building and training functions
+├── streamlit_app.py          # Streamlit web application with modern UI
+├── requirements.txt          # Python dependencies
+├── README.md                # Project documentation
+├── random_forest_model.pkl   # Saved model (generated)
+├── label_encoders.pkl        # Saved encoders (generated)
+└── dummies_columns.pkl       # Saved column names (generated)</code></pre>
+<hr>
+</section>
+<section id="technical-stack" class="level2">
+<h2 class="anchored" data-anchor-id="technical-stack">🔧 Technical Stack</h2>
+<ul>
+<li><strong>Frontend</strong>: Streamlit with custom CSS</li>
+<li><strong>Backend</strong>: Python</li>
+<li><strong>Machine Learning</strong>: Scikit-learn (Random Forest)</li>
+<li><strong>Data Processing</strong>: Pandas, NumPy</li>
+<li><strong>Visualization</strong>: Seaborn and Matplotlib</li>
+<li><strong>Model Persistence</strong>: Pickle</li>
+</ul>
+<hr>
+</section>
+<section id="model-performance" class="level2">
+<h2 class="anchored" data-anchor-id="model-performance">📈 Model Performance</h2>
+<p>The Random Forest model achieves excellent performance: - <strong>R² Score</strong>: 0.88 (88% of variance explained) - <strong>Mean Squared Error</strong>: 0.04 - <strong>Cross-validation</strong>: 5-fold CV used for hyperparameter tuning - <strong>Feature Importance</strong>: CPU, RAM, and Storage are top predictors</p>
+<hr>
+</section>
+<section id="code-and-analysis-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="code-and-analysis-notebook">📖 Code and Analysis Notebook</h2>
+<p>For a detailed walkthrough of the data analysis, feature engineering, model building, and evaluation process, please refer to the complete project notebook available on my data science blog.</p>
+<p><strong>➡️ <a href="https://ajay333a.quarto.pub/python_blog/posts/laptop_pc_pred/laptop_price_prediction.html">Read the full analysis here</a></strong></p>
+<p>The notebook covers: - In-depth Exploratory Data Analysis (EDA) - Feature engineering techniques - Step-by-step model implementation (Random Forest and Linear Regression) - Hyperparameter tuning and performance metrics</p>
+<hr>
+</section>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">🔄 How It Works</h2>
+<ol type="1">
+<li><strong>Data Preprocessing</strong>: Clean and engineer features from raw data</li>
+<li><strong>Feature Engineering</strong>: Extract meaningful features from text fields</li>
+<li><strong>Model Training</strong>: Train Random Forest with optimized hyperparameters</li>
+<li><strong>Prediction</strong>: Use trained model to predict prices for new specifications</li>
+<li><strong>Similar Laptops</strong>: Find comparable laptops within price range</li>
+</ol>
+<hr>
+</section>
+<section id="example-usage" class="level2">
+<h2 class="anchored" data-anchor-id="example-usage">📝 Example Usage</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> model_builder <span class="im">import</span> predict_laptop_price</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Example laptop specifications</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> {</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'cpu_brand'</span>: <span class="st">'Intel'</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'cpu_name'</span>: <span class="st">'Core i5'</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'cpu_ghz'</span>: <span class="fl">2.5</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'inches_size'</span>: <span class="fl">15.6</span>,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'ram_gb'</span>: <span class="dv">8</span>,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'memory_capacity_1'</span>: <span class="dv">256</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'memory_type_1'</span>: <span class="st">'SSD'</span>,</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'memory_capacity_2'</span>: <span class="dv">0</span>,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'memory_type_2'</span>: <span class="st">'None'</span>,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'resolution'</span>: <span class="st">'1920x1080'</span>,</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'touchscreen'</span>: <span class="dv">0</span>,</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'display_type'</span>: <span class="st">'Full HD'</span>,</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'gpu_brand'</span>: <span class="st">'Intel'</span>,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'gpu_name'</span>: <span class="st">'HD Graphics 620'</span>,</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'company'</span>: <span class="st">'Dell'</span>,</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'typename'</span>: <span class="st">'Notebook'</span>,</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">'opsys'</span>: <span class="st">'Windows 10'</span>,</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'weight_kg'</span>: <span class="fl">2.2</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Predict price</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>predicted_price <span class="op">=</span> predict_laptop_price(features)</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Predicted Price: ₹</span><span class="sc">{</span>predicted_price<span class="sc">:,</span><span class="fl">.2</span><span class="er">f</span><span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="uiux-features" class="level2">
+<h2 class="anchored" data-anchor-id="uiux-features">🎨 UI/UX Features</h2>
+<ul>
+<li><strong>Modern Dark Theme</strong>: Custom color palette for better user experience</li>
+<li><strong>Intuitive Navigation</strong>: Clear sidebar with descriptive icons</li>
+<li><strong>Organized Inputs</strong>: Four-column layout for laptop specifications</li>
+<li><strong>Clean Typography</strong>: Consistent font sizes and spacing</li>
+<li><strong>Visual Feedback</strong>: Clear prediction display with similar laptop suggestions</li>
+</ul>
+<hr>
+</section>
+<section id="contributing" class="level2">
+<h2 class="anchored" data-anchor-id="contributing">🤝 Contributing</h2>
+<p>This project is open for improvements and contributions. Feel free to:</p>
+<ol type="1">
+<li>Fork the repository</li>
+<li>Create a feature branch</li>
+<li>Make your changes</li>
+<li>Submit a pull request</li>
+</ol>
+<hr>
+</section>
+<section id="license" class="level2">
+<h2 class="anchored" data-anchor-id="license">📄 License</h2>
+<p>This project is open source and available under the <a href="LICENSE">MIT License</a>.</p>
+<hr>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">🆘 Troubleshooting</h2>
+<section id="common-issues" class="level3">
+<h3 class="anchored" data-anchor-id="common-issues">Common Issues</h3>
+<ol type="1">
+<li><p><strong>ModuleNotFoundError</strong>: Make sure all dependencies are installed</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p><strong>FileNotFoundError</strong>: Ensure <code>laptop.csv</code> is in the project directory</p></li>
+<li><p><strong>Model not found</strong>: Run <code>python model_builder.py</code> first to generate model files</p></li>
+<li><p><strong>Streamlit not working</strong>: Check if Streamlit is installed and try</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install streamlit <span class="at">--upgrade</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+<section id="getting-help" class="level3">
+<h3 class="anchored" data-anchor-id="getting-help">Getting Help</h3>
+<p>If you encounter any issues: 1. Check the troubleshooting section above 2. Ensure all files are in the correct directory structure 3. Verify Python version compatibility (3.8+) 4. Check that all dependencies are properly installed</p>
+<hr>
+</section>
+</section>
+<section id="future-enhancements" class="level2">
+<h2 class="anchored" data-anchor-id="future-enhancements">🔮 Future Enhancements</h2>
+<p>Potential improvements for the project:</p>
+<ul>
+<li>Add more laptop brands and models</li>
+<li>Implement price trend analysis</li>
+<li>Add comparison features between multiple laptops</li>
+<li>Include user reviews and ratings</li>
+<li>Add export functionality for predictions</li>
+<li>Implement model retraining capabilities</li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
